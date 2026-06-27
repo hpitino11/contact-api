@@ -42,12 +42,10 @@ app.post("/api/contact", contactLimiter, async (req, res) => {
       subject: `New message from ${name}`,
       reply_to: email,
       text: `
-Name: ${name}
-Email: ${email}
-Phone: ${phone}
-
-Message:
-${message}
+        Name: ${name}
+        Email: ${email}
+        Phone: ${phone}
+        Message: ${message}
       `
     });
 
