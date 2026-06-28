@@ -37,7 +37,7 @@ app.post("/api/contact", contactLimiter, async (req, res) => {
     }
 
     await resend.emails.send({
-      from: "Contact Form <onboarding@resend.dev>",
+      from: "Contact Form <noreply@coastalviewins.com>",
       to: process.env.CONTACT_TO_EMAIL,
       subject: `New message from ${name}`,
       reply_to: email,
